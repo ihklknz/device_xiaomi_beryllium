@@ -38,7 +38,7 @@ public class PickupSensor implements SensorEventListener {
 
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
     private static final int MIN_WAKEUP_INTERVAL_MS = 1000;
-    private static final int WAKELOCK_TIMEOUT_MS = 300;
+    private static final int WAKELOCK_TIMEOUT_MS = 3000;
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
@@ -49,7 +49,7 @@ public class PickupSensor implements SensorEventListener {
 
     private Sensor mProximitySensor;
     private boolean mInsidePocket = false;
-
+    
     private long mEntryTimestamp;
 
     public PickupSensor(Context context) {
@@ -73,6 +73,7 @@ public class PickupSensor implements SensorEventListener {
 
         long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
         if (delta < (isRaiseToWake ? MIN_WAKEUP_INTERVAL_MS : MIN_PULSE_INTERVAL_MS)) {
+        if (delta < (isRaiseToWake ? 0 : MIN_PULSE_INTERVAL_MS)) {
             return;
         }
 
@@ -83,6 +84,7 @@ public class PickupSensor implements SensorEventListener {
         }
 
         if (event.values[0] == 1 && !mInsidePocket) {
+        if (event.values[0] == 1) {
             if (isRaiseToWake) {
                 mWakeLock.acquire(WAKELOCK_TIMEOUT_MS);
                 mPowerManager.wakeUp(SystemClock.uptimeMillis(),
