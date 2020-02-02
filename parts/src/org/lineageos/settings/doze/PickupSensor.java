@@ -38,7 +38,7 @@ public class PickupSensor implements SensorEventListener {
 
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
     private static final int MIN_WAKEUP_INTERVAL_MS = 1000;
-    private static final int WAKELOCK_TIMEOUT_MS = 3000;
+    private static final int WAKELOCK_TIMEOUT_MS = 300;
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
