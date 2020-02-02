@@ -84,7 +84,6 @@ public class PickupSensor implements SensorEventListener {
         }
 
         if (event.values[0] == 1 && !mInsidePocket) {
-        if (event.values[0] == 1) {
             if (isRaiseToWake) {
                 mWakeLock.acquire(WAKELOCK_TIMEOUT_MS);
                 mPowerManager.wakeUp(SystemClock.uptimeMillis(),
