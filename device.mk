@@ -194,6 +194,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+    
+# IMS
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
