@@ -96,7 +96,7 @@ public final class DiracUtils {
     }
     protected static void setEnabled(boolean enable) {
 
-    protected void refreshPlaybackIfNecessary(){
+    private void refreshPlaybackIfNecessary(){
         if (mMediaSessionManager == null) return;
 
         final List<MediaController> sessions
@@ -114,7 +114,7 @@ public final class DiracUtils {
     public void setEnabled(boolean enable) {
         mDiracSound.setEnabled(enable);
         mDiracSound.setMusic(enable ? 1 : 0);
-        if (enable){
+        if (enable) {
             refreshPlaybackIfNecessary();
         }
     }
