@@ -78,6 +78,8 @@ TARGET_KERNEL_CLANG_VERSION := custom
 TARGET_KERNEL_CONFIG += vendor/xiaomi/mi845_defconfig vendor/xiaomi/beryllium.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
