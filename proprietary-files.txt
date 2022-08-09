@@ -1186,8 +1186,8 @@ vendor/etc/thermal-engine.conf
 
 # Thermal engine
 vendor/bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
 
 # Time services - from PNX - RKQ1.200906.002
 vendor/app/TimeService/TimeService.apk|2e5301dbe5f494c90f602577478f59e0452506b8
