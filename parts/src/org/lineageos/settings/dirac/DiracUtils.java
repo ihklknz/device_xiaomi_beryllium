@@ -35,6 +35,11 @@ public final class DiracUtils {
     private static MediaSessionManager mMediaSessionManager;
     private static Handler mHandler = new Handler();
     private static Context mContext;
+    private static DiracUtils mInstance;
+    protected static DiracSound mDiracSound;
+    private MediaSessionManager mMediaSessionManager;
+    private Handler mHandler = new Handler();
+    private static mContext;
 
     public static void initialize() {
         if (!mInitialized) {
