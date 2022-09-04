@@ -143,4 +143,8 @@ public final class DiracUtils {
     protected static void setScenario(int sceneInt) {
         mDiracSound.setScenario(sceneInt);
     }
+
+    protected static void setScenario(int sceneInt) {
+        mDiracSound.setScenario(sceneInt);
+    }
 }

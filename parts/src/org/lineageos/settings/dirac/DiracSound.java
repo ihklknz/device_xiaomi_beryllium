@@ -74,7 +74,6 @@ public class DiracSound extends AudioEffect {
         checkStatus(setParameter(new int[]{DIRACSOUND_PARAM_EQ_LEVEL, band},
                 String.valueOf(level).getBytes()));
     }
-
     public void setScenario(int scene) throws IllegalStateException,
             IllegalArgumentException, UnsupportedOperationException {
         checkStatus(setParameter(DIRACSOUND_PARAM_SCENE, scene));
