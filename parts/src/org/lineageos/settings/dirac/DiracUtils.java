@@ -39,7 +39,7 @@ public final class DiracUtils {
     protected static DiracSound mDiracSound;
     private MediaSessionManager mMediaSessionManager;
     private Handler mHandler = new Handler();
-    private static mContext;
+    static Context mContext;
 
     public static void initialize() {
         if (!mInitialized) {
