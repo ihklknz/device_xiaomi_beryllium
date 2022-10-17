@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common Afterlife stuff.
 $(call inherit-product, vendor/afterlife/config/common.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+
 # Afterlife. stuff.
 AFTERLIFE_MAINTAINER := hklknzツ
 TARGET_FACE_UNLOCK_SUPPORTED := true
