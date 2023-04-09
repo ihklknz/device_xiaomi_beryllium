@@ -205,6 +205,9 @@ ro.telephony.iwlan_operation_mode=legacy
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# SPU
+vendor.gatekeeper.disable_spu=true
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
