@@ -49,7 +49,9 @@ PRODUCT_PACKAGES += \
     liblhdc \
     liblhdcBT_enc \
     liblhdcdec \
-    liblhdcBT_dec
+    liblhdcBT_dec \
+    libldacBT_enc \
+    libldacBT_abr
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2246
