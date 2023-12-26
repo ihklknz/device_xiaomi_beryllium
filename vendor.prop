@@ -128,6 +128,7 @@ vendor.display.disable_rotator_downscale=1
 vendor.display.perf_hint_window=50
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+vendor.perf.framepacing.enable=1
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
