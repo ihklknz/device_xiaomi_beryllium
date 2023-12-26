@@ -43,6 +43,7 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 debug.sf.enable_egl_image_tracker=1
+debug.sf.enable_transaction_tracing=false
 debug.sf.auto_latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.hwui.skia_atrace_enabled=false
