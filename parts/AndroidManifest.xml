@@ -35,9 +35,6 @@
         android:directBootAware="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
         <receiver android:name=".BootCompletedReceiver"
                   android:exported="false">
             <intent-filter>
@@ -58,7 +55,7 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dirac_summary" />
         </activity>
-
+        
         <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:exported="false" 

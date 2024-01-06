@@ -102,6 +102,6 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
         mHeadsetType.setEnabled(isChecked);
         mPreset.setEnabled(isChecked);
-        mScenes.setEnabled(isChecked);
+		mScenes.setEnabled(isChecked);
     }
 }

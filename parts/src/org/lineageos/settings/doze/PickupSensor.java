@@ -49,7 +49,7 @@ public class PickupSensor implements SensorEventListener {
 
     private Sensor mProximitySensor;
     private boolean mInsidePocket = false;
-    
+
     private long mEntryTimestamp;
 
     public PickupSensor(Context context) {
@@ -73,7 +73,6 @@ public class PickupSensor implements SensorEventListener {
 
         long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
         if (delta < (isRaiseToWake ? MIN_WAKEUP_INTERVAL_MS : MIN_PULSE_INTERVAL_MS)) {
-        if (delta < (isRaiseToWake ? 0 : MIN_PULSE_INTERVAL_MS)) {
             return;
         }
 
