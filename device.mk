@@ -408,6 +408,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     vendor/qcom/opensource/usb/etc
 
+QCOM_SOONG_NAMESPACE := \
+    $(LOCAL_PATH)/qcom-caf
+    
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
