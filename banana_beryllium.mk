@@ -12,16 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
 # Inherit some common HorizonDroid stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
-# HorizonDroid stuff.
-CUSTOM_BUILD_TYPE := OFFICIAL
-HORIZON_MAINTAINER := hklknzツ
+# BananaDroid stuff.
+BANANA_MAINTAINER := HonokaKousaka
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := beryllium_beryllium
+PRODUCT_NAME := banana_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
