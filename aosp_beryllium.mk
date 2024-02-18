@@ -15,13 +15,13 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # HorizonDroid stuff.
-CUSTOM_BUILD_TYPE := OFFICIAL
+HORIZON_BUILD_TYPE := OFFICIAL
 HORIZON_MAINTAINER := hklknzツ
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := beryllium_beryllium
+PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
