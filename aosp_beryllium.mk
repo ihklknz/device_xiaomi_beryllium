@@ -19,6 +19,7 @@ HORIZON_BUILD_TYPE := OFFICIAL
 HORIZON_MAINTAINER := hklknzツ
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_INNERTUNE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
