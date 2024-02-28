@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    
+# GalleryGo
+PRODUCT_PACKAGES =+ \
+    GalleryGo
 
 # Health
 PRODUCT_PACKAGES += \
